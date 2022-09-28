@@ -47,8 +47,46 @@ public class Main {
 
     }
 
+    // Задание 3
+    public static void task3(){
+        System.out.println("Задание 3:");
+
+        int [] box = new int[]{1, 2, 3};
+        double [] num = {1.57, 7.654, 9.986};
+        char [] anyArr = {'a', 'b'};
+
+        for (int i = box.length - 1; i >= 0; i--) {
+            System.out.print(box[i]);
+            if (i > 0) {
+                System.out.print(", ");
+            }else {
+                System.out.print("\n");
+            }
+        }
+
+        for (int i = num.length - 1; i >= 0; i--) {
+            System.out.print(num[i]);
+            if (i > 0) {
+                System.out.print(", ");
+            }else {
+                System.out.print("\n");
+            }
+        }
+
+        for (int i = anyArr.length - 1; i >= 0; i--) {
+            System.out.print(anyArr[i]);
+            if (i > 0) {
+                System.out.print(", ");
+            }else {
+                System.out.print("\n");
+            }
+        }
+
+    }
+
     public static void main(String[] args) {
         task1();
         task2();
+        task3();
     }
 }
