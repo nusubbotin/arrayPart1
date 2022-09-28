@@ -84,9 +84,24 @@ public class Main {
 
     }
 
+    // Задание 4
+    public static void task4(){
+        System.out.println("Задание 4:");
+
+        int [] box = new int[]{1, 2, 3};
+
+        for (int i = 0; i < box.length; i++) {
+            if (box[i] % 2 == 1){
+                box[i] = box[i] + 1;
+            }
+            System.out.println(box[i]);
+        }
+    }
+
     public static void main(String[] args) {
         task1();
         task2();
         task3();
+        task4();
     }
 }
